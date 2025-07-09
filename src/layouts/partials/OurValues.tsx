@@ -4,7 +4,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { FeatureSection } from "@/types";
 
 const OurValues = () => {
-  const { title, subtitle, description, list, stats } = getListPage(
+  const { title, subtitle, description, list } = getListPage(
     "sections/our-values.md",
   ).frontmatter;
   return (

@@ -8,7 +8,7 @@ const FeaturesExplanation = ({
 }: {
   hideHeadingBar?: boolean;
 }) => {
-  const { subtitle, title, description, list } = getListPage(
+  const {title, description, list } = getListPage(
     "sections/features-explanation.md"
   ).frontmatter;
 
@@ -41,7 +41,7 @@ const FeaturesExplanation = ({
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {list?.map((group: FeatureSection, groupIndex: number) =>
+          {list?.map((group: FeatureSection) =>
             group.row.map((item: FeatureSection, index: number) => (
               <div
                 key={index}

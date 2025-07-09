@@ -5,10 +5,10 @@ import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import { markdownify } from "@/lib/utils/textConverter";
 
-function replaceYear(text: string) {
-  const year = new Date().getFullYear();
-  return text.replace("{year}", year.toString());
-}
+// function replaceYear(text: string) {
+//   const year = new Date().getFullYear();
+//   return text.replace("{year}", year.toString());
+// }
 
 const { footer_menu, footer_quick_links } = menu;
 
