@@ -33,6 +33,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
   const { navigation_button } = config;
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [isSticky, setIsSticky] = useState(false);
 
   // Toggle dropdown menu on mobile
   const toggleDropdown = (index: number) => {
@@ -54,11 +55,26 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
         });
     };
     headerHamburgerInit();
+
+    // Check if the page is scrolled and toggle sticky header class
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [pathname]);
 
   return (
     <div className={`header-wrapper ${pathname === "/" ? "relative" : "pb-6"}`}>
-      <header className="header relative">
+      <header className={`header relative ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : ""}`}>
         <nav className="navbar container relative z-10">
           {/* logo */}
           <div className="order-0 flex items-center">
@@ -157,14 +173,8 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
               <Link
                 className="btn btn-dark mt-2 lg:hidden"
                 href={navigation_button.link}
-                target={
-                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel={
-                  navigation_button.link.startsWith("http")
-                    ? "noopener noreferrer"
-                    : ""
-                }
+                target={navigation_button.link.startsWith("http") ? "_blank" : "_self"}
+                rel={navigation_button.link.startsWith("http") ? "noopener noreferrer" : ""}
               >
                 {navigation_button.label}
                 <span className="icon-wrapper">
@@ -183,14 +193,8 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
               <Link
                 className="btn btn-dark hidden lg:flex"
                 href={navigation_button.link}
-                target={
-                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel={
-                  navigation_button.link.startsWith("http")
-                    ? "noopener noreferrer"
-                    : ""
-                }
+                target={navigation_button.link.startsWith("http") ? "_blank" : "_self"}
+                rel={navigation_button.link.startsWith("http") ? "noopener noreferrer" : ""}
               >
                 {navigation_button.label}
                 <span className="icon-wrapper">
@@ -213,11 +217,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
       <div aria-hidden="true">
         <ImageFallback
           className="pointer-events-none absolute top-0 -z-10 h-full w-full object-cover object-top"
-          src={
-            pathname === "/"
-              ? "/images/banner-bg.png"
-              : "/images/page-header.png"
-          }
+          src={pathname === "/" ? "/images/banner-bg.png" : "/images/page-header.png"}
           alt="header image"
           format="webp"
           width={1920}

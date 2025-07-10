@@ -1,7 +1,8 @@
 ---
 # Banner
-title: "Your Single Source for Unified Application Management "
-description: "App Folio is a web-based application portfolio management platform that helps enterprises centralize, organize, and control all their software assets with full visibility. It offers a reliable solution for storing, tracking, and managing applications — including compliance, lifecycle information, and performance — all in one place."
+title: "Your Single Source for Unified Application Manager "
+description: "App Folio is a web-based Application Portfolio Manager platform that helps enterprises manage their software assets, compliance, and lifecycle in one place.
+Easily generate Inventory, Lifecycle, and Financial reports, and map how applications interact with datasets and departments. App Folio provides full visibility into your tech stack — enabling smarter decisions, reducing redundancy, and improving compliance."
 bg_image: "/images/banner-bg.png"
 images:
   - src: "/images/banner-img.png" # Main Image
@@ -19,5 +20,4 @@ buttons:
   - enable: true
     label: "Learn More"
     link: "/features/"
-
 ---

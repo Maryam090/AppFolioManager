@@ -13,27 +13,18 @@ list:
         description: >
           Capture basic details like application name, category, ownership, and classification to establish a strong foundation for portfolio management.
 
-      - title: "Technical Stack & Hosting Info"
+      - title: "Dynamic Chart & Insights Dashboard"
         description: >
-          Document the application's architecture, deployment model, integrations, and hosting environment — both for planning and audits.
+          Visualize all the above inputs in a centralized dashboard — offering real-time trends, alerts, and summaries that drive better decisions.
 
   - row:
-      - title: "Integration & Data Dependencies"
+      - title: "Integration & Data Dependencies & Business Value & Impact"
         description: >
-          Map how your applications interact with each other and external systems. Identify critical data flows, integration types, and points of failure.
+          Map how your applications interact with external systems and identify critical data flows. Evaluate each application's business purpose and its impact on goals.
 
-      - title: "Business Value & Impact"
+      - title: "Financial Visibility & Compliance & Risk Monitoring"
         description: >
-          Evaluate each application's business purpose, functional impact, and stakeholder ownership. Tie technology directly to business goals.
-
-  - row:
-      - title: "Financial Visibility"
-        description: >
-          Track costs year-over-year, allocate budgets, attach supporting documents, and generate downloadable reports to inform financial planning.
-
-      - title: "Compliance & Risk Monitoring"
-        description: >
-          Ensure regulatory alignment with access control, risk ratings, and policy checks — all traceable through an integrated compliance log.
+          Track costs, allocate budgets, and generate reports for financial planning. Ensure regulatory compliance with access control, risk ratings, and policy checks.
 
   - row:
       - title: "Lifecycle & Modernization Planning"
@@ -44,12 +35,4 @@ list:
         description: >
           Monitor key performance indicators tied to uptime, response times, and support SLAs. Spot underperforming systems early.
 
-  - row:
-      - title: "Data Access & Usage Logs"
-        description: >
-          View access patterns, track who accessed what, when, and why. Identify anomalies and ensure accountability across your IT environment.
-
-      - title: "Dynamic Chart & Insights Dashboard"
-        description: >
-          Visualize all the above inputs in a centralized dashboard — offering real-time trends, alerts, and summaries that drive better decisions.
 ---

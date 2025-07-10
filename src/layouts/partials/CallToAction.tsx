@@ -4,7 +4,7 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 
 const CallToAction = () => {
-  const { enable, title, description, image, button } = getListPage(
+  const { enable, title, description, image, buttons } = getListPage(
     "sections/call-to-action.md",
   ).frontmatter;
 
@@ -40,7 +40,41 @@ const CallToAction = () => {
                     data-aos="fade-up-sm"
                     data-aos-delay="50"
                   />
-                  {button.enable && (
+                    {buttons && (
+                    <ul className="flex flex-wrap justify-center gap-4">
+                      {buttons.map(
+                        (
+                          { label, link }: { label: string; link: string },
+                          index: number,
+                        ) => (
+                          <li
+                            key={index}
+                            data-aos="fade-up-sm"
+                            data-aos-delay={100 + index * 50}
+                          >
+                            <a
+                              className={`${index === 0 ? "btn-primary" : "btn-outline-primary"} btn `}
+                              href={link}
+                              target={link.startsWith("http") ? "_blank" : "_self"}
+                              rel="noopener"
+                            >
+                              {label}
+                              <span className="sr-only">Details</span>
+                              <span className="icon-wrapper">
+                                <span className="icon">
+                                  <DynamicIcon icon={"FaArrowRight"} />
+                                </span>
+                                <span className="icon" aria-hidden="true">
+                                  <DynamicIcon icon={"FaArrowRight"} />
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                        ),
+                      )}
+                    </ul>
+                  )}
+                  {/* {button.enable && (
                     <a
                       className="btn btn-primary-light relative"
                       href={button.link}
@@ -61,7 +95,7 @@ const CallToAction = () => {
                         </span>
                       </span>
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

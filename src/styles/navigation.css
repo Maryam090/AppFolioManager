@@ -1,5 +1,5 @@
 .header {
-  @apply pt-6 pb-5;
+  @apply pt-3 pb-3;
 
   /* navbar items */
   .navbar {
