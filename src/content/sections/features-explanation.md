@@ -1,38 +1,35 @@
 ---
 subtitle: "Features Explained"
-title: "Interactive Interface That Captures Every Critical Insight"
-description: >
-  App Folio offers a complete suite of modules designed to give you clarity, control, and confidence in managing your application landscape.
-  From technical details and integration dependencies to financials and compliance, every input contributes to the big picture — visualized through real-time reports, intelligent dashboards, and structured data views.
+title: "Unlock Complete Control Over Your Application Ecosystem"
+description: AppFolio gives you the tools to centralize intelligence, eliminate guesswork, and take decisive action — all from a single, unified platform.
 
 image: "/images/features/product.png"
 
 list:
   - row:
-      - title: "Application Metadata & Classification"
+      - title: "Centralized Application Intelligence"
         description: >
-          Capture basic details like application name, category, ownership, and classification to establish a strong foundation for portfolio management.
+          Capture everything that matters — ownership, purpose, usage, and more — in one structured, searchable source of truth.
 
-      - title: "Dynamic Chart & Insights Dashboard"
+      - title: "Dynamic Data Flow & Dependency Mapping"
         description: >
-          Visualize all the above inputs in a centralized dashboard — offering real-time trends, alerts, and summaries that drive better decisions.
-
-  - row:
-      - title: "Integration & Data Dependencies & Business Value & Impact"
-        description: >
-          Map how your applications interact with external systems and identify critical data flows. Evaluate each application's business purpose and its impact on goals.
-
-      - title: "Financial Visibility & Compliance & Risk Monitoring"
-        description: >
-          Track costs, allocate budgets, and generate reports for financial planning. Ensure regulatory compliance with access control, risk ratings, and policy checks.
+          Visually explore how applications interact and depend on each other. Identify bottlenecks, risks, and inefficiencies with clarity.
 
   - row:
-      - title: "Lifecycle & Modernization Planning"
+      - title: "Cost & Value Visibility"
         description: >
-          Know the stage of each application — active, legacy, under review — and set plans for upgrades, retirements, or replacements.
+          Understand the true cost and impact of every application. Optimize budgets, cut waste, and support smarter financial planning.
 
-      - title: "Performance & Operational Metrics"
+      - title: "Lifecycle & Upgrade Planning"
         description: >
-          Monitor key performance indicators tied to uptime, response times, and support SLAs. Spot underperforming systems early.
+          Track where each app is in its journey. Confidently plan for updates, replacements, or retirements with clear timelines.
 
+  - row:
+      - title: "Compliance & Risk Monitoring"
+        description: >
+          Stay ahead of audits and regulations with built-in checks for access, compliance, and critical risks — all traceable and exportable.
+
+      - title: "Insights That Drive Action"
+        description: >
+          From real-time dashboards to downloadable reports, AppFolio transforms data into decisions — instantly.
 ---

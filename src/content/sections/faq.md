@@ -6,17 +6,18 @@ description: Your Trusted Partner in Data Protection with Cutting-Edge Solutions
 
 # FAQ List
 list:
-  - title: What is two-factor authentication (2FA) and how does it enhance security?
-    description: If you receive a suspicious email, do not click on any links or download attachments. Verify the sender's email address and look for signs of phishing, such as misspellings or unusual requests. If in doubt, contact the sender directly using a known, trusted method of communication. Report the email to your IT department or email provider.
+  - title: What is AppFolio, and how is it different from a regular asset tracker?
+    description: AppFolio is more than just inventory — it’s a complete platform to manage application metadata, map integrations, track usage, analyze cost, and drive smarter decisions.
     active: true
-  - title: What should I do if I receive a suspicious email?
-    description: Receiving a suspicious email? Don't click on links or download attachments. Verify the sender's email address and look for phishing signs, like misspellings or strange requests. If uncertain, reach out to the sender directly via a trusted method. Report it to your IT department or email provider.
-  - title: What is encryption and how does it protect my data?
-    description: When you get a suspicious email, don't click any links or download attachments. Verify the sender's email address and look for phishing signs, such as misspellings or strange requests. If uncertain, contact the sender using a reliable method. Report the email to your IT department or email provider.
-  - title: How can I ensure my mobile devices are secure?
-    description: If you receive a suspicious email, do not click on any links or download attachments. Verify the sender's email address and look for signs of phishing, such as misspellings or unusual requests. If in doubt, contact the sender directly using a known, trusted method of communication. Report the email to your IT department or email provider.
-  - title: What are the common signs of a data breach?
-    description: Received a suspicious email? Refrain from clicking any links or downloading attachments. Verify the sender's email and check for phishing signs, like misspellings or odd requests. If unsure, contact the sender via a trusted method. Report the email to your IT department or email provider.
-  - title: How can I create a strong password?
-    description: If a suspicious email arrives, do not click on links or download attachments. Verify the sender's email address and look for phishing signs, such as typos or unusual requests. If unsure, contact the sender directly using a trusted method. Report the email to your IT department or email provider.
+  - title: Can I visualize how applications and datasets are connected?
+    description: Yes. AppFolio provides interactive maps that show how data flows between applications and where dependencies exist, making it easy to spot gaps and risks.
+  - title: Is AppFolio suitable for compliance and audit preparation?
+    description: Absolutely. You can generate audit-ready reports on ownership, lifecycle status, financials, and access — all in just a few clicks.
+  - title: Can I assign applications to departments or business areas?
+    description: Yes. AppFolio allows you to map applications to departments and business units to understand usage, ownership, and business alignment.
+  - title: What kind of support does AppFolio provide?
+    description: We offer 24/7 ticket-based support. Log your issue, and our team will respond within 24 hours — often much sooner.
+
+  # - title: How can I create a strong password?
+  #   description: If a suspicious email arrives, do not click on links or download attachments. Verify the sender's email address and look for phishing signs, such as typos or unusual requests. If unsure, contact the sender directly using a trusted method. Report the email to your IT department or email provider.
 ---

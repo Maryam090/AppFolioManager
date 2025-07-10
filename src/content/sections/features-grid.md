@@ -1,23 +1,23 @@
 ---
 subtitle: "Key Features"
-title: "In-Depth Explanation of App Folio's Capabilities"
+title: "In-Depth Explanation of AppFolio's Capabilities"
 description: >
   Your All-in-One Platform for Application Insights, Reporting, Mapping, and Data Dependency Management — Built to Support Smarter IT Operations and Strategic Decision-Making.
 
 list:
-  - title: "Generate Actionable Reports with Rich Filters"
+  - title: "Build Reports That Drive Action"
     description: >
-      App Folio enables users to create powerful Inventory, Lifecycle, and Financial reports. Apply smart filters by department, business area, or application lifecycle, and export summaries in PDF for distribution, analysis, or compliance audits.
+      Transform raw application data into clear, exportable reports tailored for strategy, audits, and leadership reviews. AppFolio helps you uncover insights, highlight trends, and support decisions — without the manual effort.
     image: "/images/features/reports.png"
 
-  - title: "Interactive Mapping Of Your Entire Application Ecosystem"
+  - title: "Visualize How Everything Connects"
     description: >
-      Visualize the entire application ecosystem, including connections between applications, datasets, departments, and business areas. Identify redundancies, assess risk points, and make informed integration or decommissioning decisions.
+      AppFolio’s interactive map reveals how your systems interact and depend on each other. Spot inefficiencies, surface hidden risks, and understand the bigger picture with confidence.
     image: "/images/features/maps.png"
 
-  - title: "Track and Manage Data Dependencies with Clarity"
+  - title: "Make Data Dependencies Crystal Clear"
     description: >
-      Understand how each application relies on specific datasets and services. App Folio provides a clear dependency matrix so teams can assess impact, manage risks, and align infrastructure with business needs.
+      AppFolio shows how your applications depend on shared data, helping you spot risks, reduce complexity, and align your systems with what the business truly needs.
     image: "/images/features/dataset-map.png"
     button:
       enable: true

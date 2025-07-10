@@ -1,18 +1,18 @@
 ---
 subtitle: "How it Works"
-title: "How App Folio Optimizes Your Portfolio Management"
-description: Empowering organizations with centralized visibility, lifecycle tracking, and actionable insights to make better IT decisions.
+title: "How AppFolio Optimizes Your Application Portfolio"
+description: Empowering enterprises with deep visibility, actionable insights, and centralized control across their entire application landscape.
 
 list:
   - icon: "/images/icons/svg/detection.svg"
-    title: "Capture Application Metadata"
-    description: Document key details like ownership, technical stack, integrations, and dependencies — all in one structured, searchable system.
+    title: "Visualize Integrations & Data Flow"
+    description: Map how applications connect, interact, and exchange data. Define producers and consumers, highlight dependencies, and see the entire ecosystem in a clear, visual format.
 
   - icon: "/images/icons/svg/encryption.svg" # get outline svg icons from here - https://www.svgrepo.com/vectors/security/outlined/
-    title: "Analyze Value & Cost"
-    description: Track business relevance, financial impact, and usage to prioritize critical apps, reduce waste, and support budgeting.
+    title: "Centralize Application Insights"
+    description: Capture everything from technical metadata to business ownership, departmental usage, and integration points — all structured and searchable in one place.
 
   - icon: "/images/icons/svg/time.svg" # get outline svg icons from here - https://www.svgrepo.com/vectors/security/outlined/
-    title: "Manage Lifecycle & Risk"
-    description: Monitor each application's stage, compliance status, and risk exposure to guide modernization, upgrades, or retirement decisions.
+    title: "Control Lifecycle, Cost & Compliance"
+    description: Track application value, usage, compliance, and total cost of ownership. Make smarter decisions about upgrades, renewals, and decommissions with confidence.
 ---

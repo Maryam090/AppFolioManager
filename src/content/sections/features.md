@@ -1,18 +1,18 @@
 ---
 subtitle: "Essential Feature"
-title: "Explore the Tools That Power App Folio."
+title: "Explore the Tools That Power AppFolio"
 description: "Your Central Command Center for Application Insights, Security Monitoring, and Strategic IT Management — All in One Place."
 list:
-  - title: "Generate Reports that Drive Action"
+  - title: "Turn Raw Application Data into Strategic Insight"
     image: "/images/features/reports.png"
-    description: "Use filters and smart summaries to create meaningful reports across Inventory, Lifecycle, and Financial domains."
+    description: "AppFolio’s intelligent reporting engine transforms your application portfolio into a source of clarity — helping you uncover opportunities, cut waste, and stay audit-ready."
     bulletpoints_y:
       - icon: "/images/icons/png/log.png"
-        title: "Comprehensive Reporting & Exportable Insights"
-        description: "Summarize app metadata, performance, cost, and lifecycle details for leadership and IT teams, and quickly generate PDF versions for distribution or compliance documentation."
+        title: "Insightful, Action-Ready Reports"
+        description: "Generate powerful summaries across multiple metrics. Highlight cost drivers, track usage trends, and surface the data leadership actually needs — all in seconds"
       - icon: "/images/icons/svg/code.svg"
-        title: "Advanced Filters"
-        description: "Narrow down results by Department or Business Area with just a few clicks."
+        title: "Exportable, Audit-Ready PDFs"
+        description: "Create clean, professional PDF reports you can share with stakeholders, use in board meetings, or submit during compliance reviews — no extra formatting, no manual work."
     button:
       enable: false
       label: "Explore Reports"
@@ -23,17 +23,16 @@ list:
     description: "Bring clarity to complex environments with interactive maps of your applications, datasets, and organizational structure."
     bulletpoints_x:
       - icon: "/images/icons/svg/lock.svg"
-        title: "Application Relationships"
-        description: "Understand how apps are connected and where dependencies exist."
+        title: "Application Dependency Mapping"
+        description: "Instantly understand how applications are connected, where dependencies exist, and how changes in one system could ripple through others."
       - icon: "/images/icons/svg/user-shield.svg"
-        title: "Dataset Flow"
-        description: "Track data movement and usage across multiple systems and stakeholders."
-      - icon: "/images/icons/svg/audit.svg"
-        title: "Department & Business Maps"
-        description: "See which teams rely on which apps and uncover opportunities for optimization."
+        title: "Data & Business Flow Maps"
+        description: "Visualize how data moves between applications and teams. See which departments depend on which tools — and spot inefficiencies before they grow."
+      # - icon: "/images/icons/svg/audit.svg"
+      #   title: "Risk & Redundancy Exposure"
+      #   description: "See which teams rely on which apps and uncover opportunities for optimization."
     button:
       enable: true
       label: "Get Started"
       link: "https://my.appfoliomgr.com/login"
-
 ---

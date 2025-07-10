@@ -6,6 +6,6 @@ draft: false
 
 hero:
   subtitle: Key Features
-  title: Explore Our Features to Keep Your Data Safe
-  description: Your Trusted Partner in Data Protection with Cutting-Edge Solutions for <br> Comprehensive Data Security.
+  title: The Features That Help You Master Your Application Landscape
+  description: AppFolio gives you the visibility and control to reduce risk, eliminate redundancy, and make smarter IT decisions — faster.
 ---
