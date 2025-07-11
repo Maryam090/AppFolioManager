@@ -32,7 +32,7 @@
 
   "navigation_button": {
     "enable": true,
-    "label": "Get Started",
+    "label": "Try Now",
     "link": "https://my.appfoliomgr.com/login"
   },
 

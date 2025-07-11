@@ -69,7 +69,7 @@ const HomeBanner = () => {
                 data-aos="fade-up-sm"
                 data-aos-delay="400"
               >
-                <div className="max-h-[510px] overflow-hidden">
+                <div className="max-h-[540px] w-full overflow-hidden">
                   {images[0] && (
                     <ImageFallback
                       src={images[0].src}
