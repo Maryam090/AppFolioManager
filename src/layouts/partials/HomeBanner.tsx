@@ -69,17 +69,19 @@ const HomeBanner = () => {
                 data-aos="fade-up-sm"
                 data-aos-delay="400"
               >
-                <div className="max-h-[540px] w-full overflow-hidden">
+                <div className="max-h-[540px] w-full overflow-hidden rounded-xl">
                   {images[0] && (
                     <ImageFallback
                       src={images[0].src}
                       alt={images[0].alt}
                       width={1920}
                       height={1080}
+                      className="w-full h-full object-cover"
                     />
                   )}
                 </div>
               </div>
+
               {/* <div className="col-12 pb-4 pt-16 lg:pb-0 order-1">
                 <div className="flex flex-wrap justify-center gap-4 px-4 lg:flex-nowrap lg:justify-between lg:px-0">
                   {images
