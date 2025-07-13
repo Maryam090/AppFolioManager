@@ -5,11 +5,11 @@ description: "Your Central Command Center for Application Insights, Security Mon
 list:
   - title: "Turn Raw Application Data into Strategic Insight"
     image: "/images/features/reports.png"
-    description: "AppFolio’s intelligent reporting engine transforms your application portfolio into a source of clarity — helping you uncover opportunities, cut waste, and stay audit-ready."
+    description: "AppFolio’s intelligent reporting engine transforms your application portfolio into a source of clarity — helping you uncover opportunities and identify redundancies"
     bulletpoints_y:
       - icon: "/images/icons/png/log.png"
         title: "Insightful, Action-Ready Reports"
-        description: "Generate powerful summaries across multiple metrics. Highlight cost drivers, track usage trends, and surface the data leadership actually needs — all in seconds"
+        description: "Make sense of complex data in moments. Our platform distills scattered metrics into clear, executive-ready insights—revealing what’s driving performance, where costs are rising, and how to take action with confidence."
       - icon: "/images/icons/svg/code.svg"
         title: "Exportable, Audit-Ready PDFs"
         description: "Create clean, professional PDF reports you can share with stakeholders, use in board meetings, or submit during compliance reviews — no extra formatting, no manual work."
