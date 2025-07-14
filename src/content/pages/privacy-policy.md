@@ -1,30 +1,49 @@
 ---
 title: Privacy Policy
 meta_title: ""
-description: "this is meta description"
+description: "At AppFolio, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains what data we collect, why we collect it, how we use it, and the choices you have regarding your information."
 draft: false
 ---
 
-#### Responsibility of Contributors
+#### Information We Collect
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+We may collect the following types of information when you use our services:
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+**Account Information:** Name, email address, organization details, and contact number.
 
-#### Gathering of Personal Information
+**Application Data:** Metadata and content added to the platform by your organization (e.g., application records, integrations, dependencies).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+**Support Requests:** Communications and support tickets submitted to our team.
 
-#### Protection of Personal- Information
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+#### How We Use Your Information
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+We use the information we collect to:
+
+- Provide and improve our services
+- Personalize your experience on the platform
+- Respond to inquiries and support requests
+- Ensure security and compliance
+- Communicate updates, changes, or policy revisions
+
+---
+
+#### Data Storage & Security
+
+Your data is stored on secure cloud infrastructure. All information is encrypted both in transit and at rest using industry-standard protocols. We also implement strict access controls and security practices to help safeguard your information from unauthorized access or misuse.
+
+---
 
 #### Privacy Policy Changes
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+We may update this Privacy Policy from time to time. When we do:
+
+1. You will be notified of any significant changes via email or in-app alerts.
+2. All updates will be reflected on this page with the latest revision date.
+3. Changes related to user data or technology updates will be communicated clearly to all customers.
+4. Continued use of AppFolio after changes implies acceptance of the updated terms.
+
+---
+
+If you have any questions about this Privacy Policy or how your data is handled, feel free to contact us at **support@appfoliomgr.com**.

@@ -108,6 +108,7 @@ const FeatureSection = () => {
                             )}
                             {point.description && (
                               <p
+                                className="text-lg/[inherit]"
                                 dangerouslySetInnerHTML={markdownify(
                                   point.description,
                                 )}
