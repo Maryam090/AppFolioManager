@@ -1,5 +1,4 @@
 // 📁 components/ContactHero.tsx (Server Component)
-import config from "@/config/config.json";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";

@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const ZohoFormClient = () => {
   const zohoFormRef = useRef<HTMLFormElement | null>(null);
