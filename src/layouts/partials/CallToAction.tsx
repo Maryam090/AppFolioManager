@@ -2,6 +2,7 @@ import DynamicIcon from "@/helpers/DynamicIcon";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
+import Link from "next/link";
 
 const CallToAction = () => {
   const { enable, title, description, image, buttons } = getListPage(
@@ -15,12 +16,12 @@ const CallToAction = () => {
           <div className="container">
             <div className="bg-text-dark px-10 py-16 xl:p-20 rounded-[40px] relative overflow-hidden">
               <div
-                className="absolute !top-1/2 !-translate-y-1/2 !left-1/2 !-translate-x-1/2 rotate-[7.83deg] pointer-events-none"
+                className="absolute !top-1/2 !-translate-y-1/2 !left-1/2 !-translate-x-1/2 rotate-[7.83deg] pointer-events-none -z-[999]"
                 data-aos="fade-in"
                 data-aos-delay="200"
               >
                 <ImageFallback
-                  className=" h-[641px] w-auto "
+                  className=" h-[641px] w-auto -z-[999]"
                   src={image}
                   alt="cta-image"
                   width={641}
@@ -40,7 +41,7 @@ const CallToAction = () => {
                     data-aos="fade-up-sm"
                     data-aos-delay="50"
                   />
-                    {buttons && (
+                  {buttons && (
                     <ul className="flex flex-wrap justify-center gap-4">
                       {buttons.map(
                         (
@@ -52,10 +53,12 @@ const CallToAction = () => {
                             data-aos="fade-up-sm"
                             data-aos-delay={100 + index * 50}
                           >
-                            <a
+                            <Link
                               className={`${index === 0 ? "btn-primary" : "btn-outline-primary"} btn `}
                               href={link}
-                              target={link.startsWith("http") ? "_blank" : "_self"}
+                              target={
+                                link.startsWith("http") ? "_blank" : "_self"
+                              }
                               rel="noopener"
                             >
                               {label}
@@ -68,7 +71,7 @@ const CallToAction = () => {
                                   <DynamicIcon icon={"FaArrowRight"} />
                                 </span>
                               </span>
-                            </a>
+                            </Link>
                           </li>
                         ),
                       )}

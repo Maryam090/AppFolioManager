@@ -2,7 +2,7 @@
 # Our Customers
 subtitle: FAQ
 title: Frequently Asked Questions
-description: Your Trusted Partner in Data Protection with Cutting-Edge Solutions for <br> Comprehensive Data Security.
+description: Your Trusted Partner in Application Management, Integration Mapping, and Smarter Decision-Making with Cutting-Edge Solutions <br> for Comprehensive Data Insight.
 
 # FAQ List
 list:

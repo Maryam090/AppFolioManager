@@ -1,7 +1,7 @@
 ---
 subtitle: "Essential Feature"
 title: "Explore the Tools That Power AppFolio"
-description: "Your Central Command Center for Application Insights, Security Monitoring, and Strategic IT Management — All in One Place."
+description: "Your Central Command Center for Application Insights, Operational Oversight, and Strategic IT Management — All in One Place."
 list:
   - title: "Turn Raw Application Data into Strategic Insight"
     image: "/images/features/reports.png"

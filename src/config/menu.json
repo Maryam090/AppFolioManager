@@ -31,8 +31,8 @@
       "url": "/features/"
     },
     {
-      "name": "Contact",
-      "url": "/contact/"
+      "name": "Services",
+      "url": "/services/"
     }
   ],
   "footer_quick_links": [
@@ -43,6 +43,10 @@
     {
       "name": "Privacy Policy",
       "url": "/privacy-policy/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/"
     }
   ]
 }

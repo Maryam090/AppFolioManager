@@ -137,7 +137,7 @@
 
 /* accordion */
 .accordion {
-  @apply bg-light min-h-full gap-4 overflow-hidden rounded-md;
+  @apply bg-light min-h-full gap-4 overflow-hidden rounded-md items-center;
 
   &.active {
     @apply bg-text-dark/5;

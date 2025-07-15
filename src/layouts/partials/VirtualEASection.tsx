@@ -1,3 +1,4 @@
+import DynamicIcon from "@/helpers/DynamicIcon";
 import ImageFallback from "@/helpers/ImageFallback";
 import Link from "next/link";
 
@@ -62,7 +63,15 @@ const VirtualEASection = () => {
 
         <div className="text-center mt-10">
           <Link href="/contact" className="btn btn-primary ml-0 px-6">
-            Talk to an Expert
+            Talk to an Expert 
+            <span className="icon-wrapper">
+                          <span className="icon">
+                            <DynamicIcon icon={"FaArrowRight"} />
+                          </span>
+                          <span className="icon" aria-hidden="true">
+                            <DynamicIcon icon={"FaArrowRight"} />
+                          </span>
+                        </span>
           </Link>
         </div>
       </div>
