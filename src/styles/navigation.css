@@ -38,6 +38,9 @@
         @apply relative -z-10 inline-block align-[-2px] text-xs/snug transition-transform duration-300;
       }
     }
+    .nav-link.active {
+      @apply text-tertiary;
+    }
   }
 }
 

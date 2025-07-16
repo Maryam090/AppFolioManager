@@ -1,7 +1,7 @@
 ---
 subtitle: "Features Explained"
 title: "Unlock Complete Control Over Your Application Ecosystem"
-description: AppFolio gives you the tools to centralize intelligence, eliminate guesswork, and take decisive action — all from a single, unified platform.
+description: App Stack gives you the tools to centralize intelligence, eliminate guesswork, and take decisive action — all from a single, unified platform.
 
 image: "/images/features/product.png"
 
@@ -31,5 +31,5 @@ list:
 
       - title: "Insights That Drive Action"
         description: >
-          From real-time dashboards to downloadable reports, AppFolio transforms data into decisions — instantly.
+          From real-time dashboards to downloadable reports, App Stack transforms data into decisions — instantly.
 ---

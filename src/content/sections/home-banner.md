@@ -1,7 +1,7 @@
 ---
 # Banner
 title: "Where Your Entire Application Landscape Comes Together"
-description: "AppFolio is a unified Application Portfolio Management (APM) platform that helps enterprises take full control of their software ecosystem. Track every application, map data flows, monitor dependencies, and manage lifecycle, cost, and compliance — all from one place. Whether you're preparing for audits or optimizing your IT strategy, AppFolio gives you instant access to everything you need — so your organization can grow smarter, not messier."
+description: "App Stack is a unified Application Portfolio Management (APM) platform that helps enterprises take full control of their software ecosystem. Track every application, map data flows, monitor dependencies, and manage lifecycle, cost, and compliance — all from one place. Whether you're preparing for audits or optimizing your IT strategy, App Stack gives you instant access to everything you need — so your organization can grow smarter, not messier."
 bg_image: "/images/banner-bg.png"
 images:
   - src: "/images/banner-img.png" # Main Image

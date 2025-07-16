@@ -75,8 +75,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom copyright */}
-        <div className="mt-14 border-t border-gray-300 pt-6 text-center text-base font-medium text-gray-700">
-          &copy; 2025 AppFolioMgr. All Rights Reserved.
+        <div className="mt-14 border-t border-gray-300 py-6 text-center text-base font-medium text-gray-700">
+          &copy; 2025 App Stack. All Rights Reserved.
         </div>
       </div>
     </footer>

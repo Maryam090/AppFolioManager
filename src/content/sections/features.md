@@ -1,11 +1,11 @@
 ---
 subtitle: "Essential Feature"
-title: "Explore the Tools That Power AppFolio"
+title: "Explore the Tools That Power App Stack"
 description: "Your Central Command Center for Application Insights, Operational Oversight, and Strategic IT Management — All in One Place."
 list:
   - title: "Turn Raw Application Data into Strategic Insight"
     image: "/images/features/reports.png"
-    description: "AppFolio’s intelligent reporting engine transforms your application portfolio into a source of clarity — helping you uncover opportunities and identify redundancies"
+    description: "App Stack’s intelligent reporting engine transforms your application portfolio into a source of clarity — helping you uncover opportunities and identify redundancies"
     bulletpoints_y:
       - icon: "/images/icons/png/log.png"
         title: "Insightful, Action-Ready Reports"

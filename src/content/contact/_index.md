@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 meta_title: ""
-description: "Reach out to the AppFolio team for support, product inquiries, or partnership opportunities. We're here to help you optimize your application ecosystem."
+description: "Reach out to the App Stack team for support, product inquiries, or partnership opportunities. We're here to help you optimize your application ecosystem."
 draft: false
 
 hero:
@@ -17,5 +17,5 @@ hero:
 
     - icon: "/images/icons/svg/like.svg"
       title: Knowledge Base & Onboarding Guides
-      description: Access step-by-step guides, FAQs, and best practices to get the most out of AppFolio — from setup to advanced features.
+      description: Access step-by-step guides, FAQs, and best practices to get the most out of App Stack — from setup to advanced features.
 ---

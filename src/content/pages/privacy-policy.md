@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 meta_title: ""
-description: "At AppFolio, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains what data we collect, why we collect it, how we use it, and the choices you have regarding your information."
+description: "At App Stack, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains what data we collect, why we collect it, how we use it, and the choices you have regarding your information."
 draft: false
 ---
 
@@ -42,7 +42,7 @@ We may update this Privacy Policy from time to time. When we do:
 1. You will be notified of any significant changes via email or in-app alerts.
 2. All updates will be reflected on this page with the latest revision date.
 3. Changes related to user data or technology updates will be communicated clearly to all customers.
-4. Continued use of AppFolio after changes implies acceptance of the updated terms.
+4. Continued use of App Stack after changes implies acceptance of the updated terms.
 
 ---
 

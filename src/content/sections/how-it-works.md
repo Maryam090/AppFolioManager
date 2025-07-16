@@ -1,6 +1,6 @@
 ---
 subtitle: "How it Works"
-title: "How AppFolio Optimizes Your Application Portfolio"
+title: "How App Stack Optimizes Your Application Portfolio"
 description: Empowering enterprises with deep visibility, actionable insights, and centralized control across their entire application landscape.
 
 list:

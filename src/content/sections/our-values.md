@@ -2,12 +2,12 @@
 subtitle: Core Values
 title: Our Values
 description: >
-  AppFolio is more than just an application management tool — it’s a platform built with purpose and a commitment to modernizing IT strategy. Our values shape how we innovate, support our users, and help organizations drive smarter digital decisions at scale.
+  App Stack is more than just an application management tool — it’s a platform built with purpose and a commitment to modernizing IT strategy. Our values shape how we innovate, support our users, and help organizations drive smarter digital decisions at scale.
 
 list:
   - icon: "/images/icons/svg/detection.svg"
     title: Innovation
-    description: We continuously enhance AppFolio to deliver cutting-edge features that simplify complex IT ecosystems and keep our users ahead of the curve.
+    description: We continuously enhance App Stack to deliver cutting-edge features that simplify complex IT ecosystems and keep our users ahead of the curve.
 
   - icon: "/images/icons/svg/encryption.svg"
     title: Integrity

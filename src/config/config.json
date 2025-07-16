@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "AppFolioManager",
+    "title": "App Stack",
     "base_url": "https://my.appfoliomgr.com",
     "base_path": "/",
     "trailing_slash": true,
@@ -8,7 +8,7 @@
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "34",
-    "logo_text": "AppFolioManager"
+    "logo_text": "App Stack"
   },
 
   "settings": {
@@ -19,7 +19,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "footer_description": "AppFolio is a web-based application portfolio management platform used by enterprises to manage their software assets, life cycle management and investment insights.",
+    "footer_description": "App Stack is a web-based application portfolio management platform used by enterprises to manage their software assets, life cycle management and investment insights.",
     "copyright": "Copyright © {year} Nightingaletech.net All Rights Reserved"
   },
 

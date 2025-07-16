@@ -31,7 +31,7 @@ const VirtualEASection = () => {
           <h2 className="h3 mb-4">Virtual Enterprise Architect (vEA) Service</h2>
           <p>
             Our vEA service is tailored for organizations looking to offload the responsibility of managing their Application Portfolio.
-            Instead of just using software, we assign skilled professionals who actively manage and optimize your portfolio using App Folio.
+            Instead of just using software, we assign skilled professionals who actively manage and optimize your portfolio using App Stack.
           </p>
         </div>
 
