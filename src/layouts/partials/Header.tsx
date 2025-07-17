@@ -122,16 +122,15 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   >
                     <span
                       onClick={() => toggleDropdown(i)}
-                      className={`nav-link inline-flex items-center ${
-                        menu.children
+                      className={`nav-link inline-flex items-center ${menu.children
                           ?.map(({ url }) => url)
                           .includes(pathname) ||
-                        menu.children
-                          ?.map(({ url }) => `${url}/`)
-                          .includes(pathname)
+                          menu.children
+                            ?.map(({ url }) => `${url}/`)
+                            .includes(pathname)
                           ? "active"
                           : ""
-                      }`}
+                        }`}
                     >
                       {menu.name}
                       <span className="arrow-icon">
@@ -151,11 +150,10 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                           <a
                             href={child.url}
                             aria-label={child.name}
-                            className={`nav-dropdown-link block ${
-                              (pathname === `${child.url}/` ||
+                            className={`nav-dropdown-link block ${(pathname === `${child.url}/` ||
                                 pathname === child.url) &&
                               "active"
-                            }`}
+                              }`}
                           >
                             {child.name}
                           </a>
@@ -167,11 +165,10 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      className={`nav-link block ${
-                        (pathname === `${menu.url}/` ||
+                      className={`nav-link block ${(pathname === `${menu.url}/` ||
                           pathname === menu.url) &&
                         "active"
-                      }`}
+                        }`}
                     >
                       {menu.name}
                     </Link>
