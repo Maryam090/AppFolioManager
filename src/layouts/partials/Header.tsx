@@ -74,7 +74,9 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 
   return (
     <div className={`header-wrapper ${pathname === "/" ? "relative" : "pb-6"}`}>
-      <header className={`header relative ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : ""}`}>
+      <header
+        className={`header relative ${isSticky ? "sticky top-0 z-50 bg-white shadow-md" : ""}`}
+      >
         <nav className="navbar container relative z-10">
           {/* logo */}
           <div className="order-0 flex items-center">
@@ -114,18 +116,22 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
-                  <li id={menu.hasChildren ? "all-pages" : undefined} className="nav-item nav-dropdown group relative">
+                  <li
+                    id={menu.hasChildren ? "all-pages" : undefined}
+                    className="nav-item nav-dropdown group relative"
+                  >
                     <span
                       onClick={() => toggleDropdown(i)}
-                      className={`nav-link inline-flex items-center ${menu.children
-                        ?.map(({ url }) => url)
-                        .includes(pathname) ||
+                      className={`nav-link inline-flex items-center ${
+                        menu.children
+                          ?.map(({ url }) => url)
+                          .includes(pathname) ||
                         menu.children
                           ?.map(({ url }) => `${url}/`)
                           .includes(pathname)
-                        ? "active"
-                        : ""
-                        }`}
+                          ? "active"
+                          : ""
+                      }`}
                     >
                       {menu.name}
                       <span className="arrow-icon">
@@ -137,16 +143,19 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                         </svg>
                       </span>
                     </span>
-                    <ul className={`nav-dropdown-list lg:invisible lg:absolute lg:translate-y-1 lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:block lg:group-hover:translate-y-0 lg:group-hover:opacity-100 ${activeDropdown === i ? 'block' : 'max-lg:hidden'}`}>
+                    <ul
+                      className={`nav-dropdown-list lg:invisible lg:absolute lg:translate-y-1 lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:block lg:group-hover:translate-y-0 lg:group-hover:opacity-100 ${activeDropdown === i ? "block" : "max-lg:hidden"}`}
+                    >
                       {menu.children?.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <a
                             href={child.url}
                             aria-label={child.name}
-                            className={`nav-dropdown-link block ${(pathname === `${child.url}/` ||
-                              pathname === child.url) &&
+                            className={`nav-dropdown-link block ${
+                              (pathname === `${child.url}/` ||
+                                pathname === child.url) &&
                               "active"
-                              }`}
+                            }`}
                           >
                             {child.name}
                           </a>
@@ -158,10 +167,11 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      className={`nav-link block ${(pathname === `${menu.url}/` ||
-                        pathname === menu.url) &&
+                      className={`nav-link block ${
+                        (pathname === `${menu.url}/` ||
+                          pathname === menu.url) &&
                         "active"
-                        }`}
+                      }`}
                     >
                       {menu.name}
                     </Link>
@@ -173,8 +183,14 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
               <Link
                 className="btn btn-dark mt-2 lg:hidden"
                 href={navigation_button.link}
-                target={navigation_button.link.startsWith("http") ? "_blank" : "_self"}
-                rel={navigation_button.link.startsWith("http") ? "noopener noreferrer" : ""}
+                target={
+                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
+                }
+                rel={
+                  navigation_button.link.startsWith("http")
+                    ? "noopener noreferrer"
+                    : ""
+                }
               >
                 {navigation_button.label}
                 <span className="icon-wrapper">
@@ -193,8 +209,14 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
               <Link
                 className="btn btn-dark hidden lg:flex"
                 href={navigation_button.link}
-                target={navigation_button.link.startsWith("http") ? "_blank" : "_self"}
-                rel={navigation_button.link.startsWith("http") ? "noopener noreferrer" : ""}
+                target={
+                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
+                }
+                rel={
+                  navigation_button.link.startsWith("http")
+                    ? "noopener noreferrer"
+                    : ""
+                }
               >
                 {navigation_button.label}
                 <span className="icon-wrapper">
@@ -217,7 +239,11 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
       <div aria-hidden="true">
         <ImageFallback
           className="pointer-events-none absolute top-0 -z-10 h-full w-full object-cover object-top"
-          src={pathname === "/" ? "/images/banner-bg.png" : "/images/page-header.png"}
+          src={
+            pathname === "/"
+              ? "/images/banner-bg.png"
+              : "/images/page-header.png"
+          }
           alt="header image"
           format="webp"
           width={1920}

@@ -9,5 +9,5 @@ buttons:
     link: "/contact/"
   - enable: true
     label: "Try Now"
-    link: "https://my.appfoliomgr.com/login"
+    link: "https://my.app-stack.net/login"
 ---

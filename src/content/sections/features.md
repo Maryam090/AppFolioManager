@@ -34,5 +34,5 @@ list:
     button:
       enable: true
       label: "Get Started"
-      link: "https://my.appfoliomgr.com/login"
+      link: "https://my.app-stack.net/login"
 ---

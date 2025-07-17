@@ -46,4 +46,4 @@ We may update this Privacy Policy from time to time. When we do:
 
 ---
 
-If you have any questions about this Privacy Policy or how your data is handled, feel free to contact us at **support@appfoliomgr.com**.
+If you have any questions about this Privacy Policy or how your data is handled, feel free to contact us at **support@appstack.com**.

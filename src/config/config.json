@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "App Stack",
-    "base_url": "https://my.appfoliomgr.com",
+    "base_url": "https://my.app-stack.net/login",
     "base_path": "/",
     "trailing_slash": true,
     "favicon": "/images/favicon.io.png",
@@ -33,7 +33,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Try Now",
-    "link": "https://my.appfoliomgr.com/login"
+    "link": "https://my.app-stack.net/login"
   },
 
   "google_tag_manager": {
