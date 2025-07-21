@@ -1,7 +1,7 @@
 {
-  "name": "fortify-nextjs",
+  "name": "app-stack",
   "version": "1.0.1",
-  "description": "Security Saas & Startup Template",
+  "description": "",
   "author": "Themefisher",
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22",
