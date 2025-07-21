@@ -30,11 +30,18 @@
     "description": "Stay Informed with Our Latest Security Insights - Subscribe to Our Newsletter!"
   },
 
-  "navigation_button": {
-    "enable": true,
-    "label": "Try Now",
-    "link": "https://my.app-stack.net/login"
-  },
+  "navigation_buttons": [
+    {
+      "label": "Login",
+      "link": "https://my.app-stack.net/login",
+      "external": true
+    },
+    {
+      "label": "Try Now",
+      "link": "https://my.app-stack.net/register",
+      "external": true
+    }
+  ],
 
   "google_tag_manager": {
     "enable": false,

@@ -30,7 +30,7 @@ const BannerSlot = ({ children }: { children: React.ReactNode }) => {
 
 const Header = ({ children }: { children?: React.ReactNode }) => {
   const { main }: { main: INavigationLink[] } = menu;
-  const { navigation_button } = config;
+  const { navigation_buttons } = config;
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const [isSticky, setIsSticky] = useState(false);
@@ -122,15 +122,16 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   >
                     <span
                       onClick={() => toggleDropdown(i)}
-                      className={`nav-link inline-flex items-center ${menu.children
+                      className={`nav-link inline-flex items-center ${
+                        menu.children
                           ?.map(({ url }) => url)
                           .includes(pathname) ||
-                          menu.children
-                            ?.map(({ url }) => `${url}/`)
-                            .includes(pathname)
+                        menu.children
+                          ?.map(({ url }) => `${url}/`)
+                          .includes(pathname)
                           ? "active"
                           : ""
-                        }`}
+                      }`}
                     >
                       {menu.name}
                       <span className="arrow-icon">
@@ -150,10 +151,11 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                           <a
                             href={child.url}
                             aria-label={child.name}
-                            className={`nav-dropdown-link block ${(pathname === `${child.url}/` ||
+                            className={`nav-dropdown-link block ${
+                              (pathname === `${child.url}/` ||
                                 pathname === child.url) &&
                               "active"
-                              }`}
+                            }`}
                           >
                             {child.name}
                           </a>
@@ -165,10 +167,11 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      className={`nav-link block ${(pathname === `${menu.url}/` ||
+                      className={`nav-link block ${
+                        (pathname === `${menu.url}/` ||
                           pathname === menu.url) &&
                         "active"
-                        }`}
+                      }`}
                     >
                       {menu.name}
                     </Link>
@@ -176,20 +179,15 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                 )}
               </React.Fragment>
             ))}
-            {navigation_button.enable && (
+            {navigation_buttons?.map((btn, idx) => (
               <Link
+                key={`nav-btn-mobile-${idx}`}
                 className="btn btn-dark mt-2 lg:hidden"
-                href={navigation_button.link}
-                target={
-                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel={
-                  navigation_button.link.startsWith("http")
-                    ? "noopener noreferrer"
-                    : ""
-                }
+                href={btn.link}
+                target={btn.external ? "_blank" : "_self"}
+                rel={btn.external ? "noopener noreferrer" : ""}
               >
-                {navigation_button.label}
+                {btn.label}
                 <span className="icon-wrapper">
                   <span className="icon">
                     <DynamicIcon icon={"FaArrowRight"} />
@@ -199,23 +197,18 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   </span>
                 </span>
               </Link>
-            )}
+            ))}
           </ul>
           <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-            {navigation_button.enable && (
+            {navigation_buttons?.map((btn, idx) => (
               <Link
-                className="btn btn-dark hidden lg:flex"
-                href={navigation_button.link}
-                target={
-                  navigation_button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel={
-                  navigation_button.link.startsWith("http")
-                    ? "noopener noreferrer"
-                    : ""
-                }
+                key={`nav-btn-desktop-${idx}`}
+                className="btn btn-dark hidden lg:flex ml-3"
+                href={btn.link}
+                target={btn.external ? "_blank" : "_self"}
+                rel={btn.external ? "noopener noreferrer" : ""}
               >
-                {navigation_button.label}
+                {btn.label}
                 <span className="icon-wrapper">
                   <span className="icon">
                     <DynamicIcon icon={"FaArrowRight"} />
@@ -225,7 +218,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                   </span>
                 </span>
               </Link>
-            )}
+            ))}
           </div>
         </nav>
       </header>
