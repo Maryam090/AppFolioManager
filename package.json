@@ -1,8 +1,8 @@
 {
   "name": "app-stack",
   "version": "1.0.1",
-  "description": "",
-  "author": "Themefisher",
+  "description": "App Stack helps enterprises manage applications, data flows, costs, and compliance from one unified platform.",
+  "author": "AppStack",
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22",
 "scripts": {
