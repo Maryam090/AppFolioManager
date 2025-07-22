@@ -16,11 +16,11 @@ const Footer = () => {
   return (
     <footer className="relative bg-light pt-16 xl:pt-28 overflow-hidden">
       {/* Decorative background image (right corner) */}
-      <img
+      {/* <img
         src="/images/footer-bg.svg"
         alt="Decorative"
         className="absolute right-0 bottom-0 w-[300px] opacity-10 pointer-events-none"
-      />
+      /> */}
 
       <div className="container relative z-10" data-aos="fade-up-sm">
         <div className="row justify-between gap-y-12">

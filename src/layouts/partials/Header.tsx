@@ -179,6 +179,8 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                 )}
               </React.Fragment>
             ))}
+              <div className="flex items-center justify-center gap-3">
+
             {navigation_buttons?.map((btn, idx) => (
               <Link
                 key={`nav-btn-mobile-${idx}`}
@@ -198,6 +200,8 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                 </span>
               </Link>
             ))}
+              </div>
+
           </ul>
           <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
             {navigation_buttons?.map((btn, idx) => (

@@ -1,9 +1,19 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import DynamicIcon from "@/helpers/DynamicIcon";
 import ImageFallback from "@/helpers/ImageFallback";
 import SeoMeta from "@/partials/SeoMeta";
 import Link from "next/link";
 
-const NotFound = async () => {
+const NotFound = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <>
       <SeoMeta title={"Page Not Found"} />
@@ -20,12 +30,6 @@ const NotFound = async () => {
                 priority
               />
               <h1 className="h2 md:h1 mb-4">Oops! Page Not Found</h1>
-              <div className="content">
-                <p>
-                  Your Trusted Partner in Data Protection with Cutting-Edge
-                  Solutions for <br /> Comprehensive Data Security.
-                </p>
-              </div>
               <Link href="/" className="btn btn-dark mt-8">
                 Back to home
                 <span className="icon-wrapper">
