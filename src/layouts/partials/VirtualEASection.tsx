@@ -28,6 +28,9 @@ const VirtualEASection = () => {
     <section className="section bg-theme-light">
       <div className="container">
         <div className="text-center mx-auto lg:w-2/3 mb-12">
+              <p
+                className="mb-3 font-medium text-tertiary tracking-wide"
+              >Services</p>
           <h2 className="h3 mb-4">Virtual Enterprise Architect (vEA) Service</h2>
           <p>
             Our vEA service is tailored for organizations looking to offload the responsibility of managing their Application Portfolio.
