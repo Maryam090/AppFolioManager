@@ -24,7 +24,7 @@ const NotFound = () => {
               <ImageFallback
                 className="mx-auto mb-16 block w-[480px]"
                 src="/images/404.svg"
-                alt="404 image"
+                alt=""
                 width={480}
                 height={780}
                 priority

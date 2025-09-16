@@ -48,7 +48,7 @@ const BlogSingle = ({ post }: { post: Post }) => {
                 <ImageFallback
                   className="h-8 w-8"
                   src="/images/icons/png/date.png"
-                  alt="date icon"
+                  alt=""
                   fallback="/images/placeholder.png"
                   width={32}
                   height={32}

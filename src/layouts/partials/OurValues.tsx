@@ -7,8 +7,13 @@ const OurValues = () => {
   const { title, subtitle, description, list } = getListPage(
     "sections/our-values.md",
   ).frontmatter;
+
   return (
-    <section className="section">
+    <section
+      className="section"
+      aria-labelledby="our-values-heading"
+      role="region"
+    >
       <div className="container">
         <div className="row">
           <div className="mx-auto text-center lg:col-10" data-aos="fade-up-sm">
@@ -18,11 +23,18 @@ const OurValues = () => {
                 dangerouslySetInnerHTML={markdownify(subtitle)}
               />
             )}
-            {title && (
+
+            {/* Ensure programmatic label for the section */}
+            {title ? (
               <h2
+                id="our-values-heading"
                 className="mb-6"
                 dangerouslySetInnerHTML={markdownify(title)}
               />
+            ) : (
+              <h2 id="our-values-heading" className="mb-6">
+                Our Values
+              </h2>
             )}
             {description && (
               <p
@@ -46,7 +58,9 @@ const OurValues = () => {
                         <ImageFallback
                           className="h-6 w-6 object-cover"
                           src={item.icon}
-                          alt={`icon related to ${item.title}`}
+                          /* If title present, make icon decorative; otherwise provide a generic alt */
+                          alt={item.title ? "" : "value icon"}
+                          aria-hidden={item.title ? true : undefined}
                           width={24}
                           height={24}
                         />

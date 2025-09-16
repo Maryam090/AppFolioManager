@@ -12,7 +12,7 @@ const CallToAction = () => {
   return (
     <>
       {enable && (
-        <section className="section mb-14">
+        <section className="section mb-14" aria-labelledby="faq-heading" role="region">
           <div className="container">
             <div className="bg-text-dark px-10 py-16 xl:p-20 rounded-[40px] relative overflow-hidden">
               <div
@@ -23,14 +23,14 @@ const CallToAction = () => {
                 <ImageFallback
                   className=" h-[641px] w-auto -z-[999]"
                   src={image}
-                  alt="cta-image"
+                  alt=""
                   width={641}
                   height={641}
                 />
               </div>
               <div className="row items-center justify-center">
                 <div className="lg:col-8 text-center">
-                  <h2
+                  <h2 id="faq-heading"
                     dangerouslySetInnerHTML={markdownify(title)}
                     className="text-text-light mb-4"
                     data-aos="fade-up-sm"

@@ -78,14 +78,14 @@ const AboutBanner = () => {
             <ImageFallback
               className="pointer-events-none absolute left-1/2 top-6 h-[2px] w-[90%] -translate-x-1/2 object-cover"
               src="/images/quote-line.png"
-              alt="quote"
+              alt=""
               width={600}
               height={2}
             />
             <ImageFallback
               className="pointer-events-none absolute -bottom-4 -right-4 h-36 w-40 object-contain"
               src="/images/quote-bg-shape.png"
-              alt="quote"
+              alt=""
               width={600}
               height={600}
             />
