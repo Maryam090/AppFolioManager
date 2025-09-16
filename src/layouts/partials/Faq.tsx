@@ -23,6 +23,10 @@ const Faq = ({ content }: { content: FeatureSection }) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+    // ids for a11y linkage
+  const headerId = (i: number) => `faq-accordion-header-${i}`;
+  const panelId = (i: number) => `faq-accordion-panel-${i}`;
+
   return (
     <section className="section">
       <div className="container">
@@ -35,13 +39,13 @@ const Faq = ({ content }: { content: FeatureSection }) => {
               />
             )}
             {title && (
-              <h2
+              <h2 id="faq-heading"
                 className="mb-6"
                 dangerouslySetInnerHTML={markdownify(title)}
               />
             )}
             {description && (
-              <p
+              <p id="faq-description"
                 className="text-lg/[inherit]"
                 dangerouslySetInnerHTML={markdownify(description)}
               />

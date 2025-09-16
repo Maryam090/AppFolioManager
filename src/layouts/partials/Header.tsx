@@ -238,7 +238,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
               ? "/images/banner-bg.png"
               : "/images/page-header.png"
           }
-          alt="header image"
+          alt=""
           format="webp"
           width={1920}
           height={1080}

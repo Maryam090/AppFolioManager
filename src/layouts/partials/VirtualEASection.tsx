@@ -25,16 +25,27 @@ const features = [
 
 const VirtualEASection = () => {
   return (
-    <section className="section bg-theme-light">
+    <section
+      className="section bg-theme-light"
+      aria-labelledby="vea-heading"
+      role="region"
+    >
       <div className="container">
         <div className="text-center mx-auto lg:w-2/3 mb-12">
-              <p
-                className="mb-3 font-medium text-tertiary tracking-wide"
-              >Services</p>
-          <h2 className="h3 mb-4">Virtual Enterprise Architect (vEA) Service</h2>
+          <p className="mb-3 font-medium text-tertiary tracking-wide">
+            Services
+          </p>
+
+          {/* Programmatic label for the region */}
+          <h2 id="vea-heading" className="h3 mb-4">
+            Virtual Enterprise Architect (vEA) Service
+          </h2>
+
           <p>
-            Our vEA service is tailored for organizations looking to offload the responsibility of managing their Application Portfolio.
-            Instead of just using software, we assign skilled professionals who actively manage and optimize your portfolio using App Stack.
+            Our vEA service is tailored for organizations looking to offload the
+            responsibility of managing their Application Portfolio. Instead of
+            just using software, we assign skilled professionals who actively
+            manage and optimize your portfolio using App Stack.
           </p>
         </div>
 
@@ -43,38 +54,40 @@ const VirtualEASection = () => {
             <div key={index} className="md:col-4 sm:col-6 col-12 mb-6">
               <div className="bg-white text-text-dark p-6 rounded shadow hover:shadow-lg transition duration-300 h-full">
                 {item.icon && (
-                  // <div className="mb-4 text-text-dark ">
-                  //   <Image src={item.icon} alt={item.title} width={50} height={50}  className="text-text-dark "/>
-                  // </div>
                   <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-tertiary">
                     <ImageFallback
                       className="h-6 w-6 object-cover"
                       src={item.icon}
-                      alt={`icon related to ${item.title}`}
+                      /* decorative when a heading follows */
+                      alt=""
+                      aria-hidden="true"
                       width={24}
                       height={24}
                     />
                   </div>
                 )}
-                
+
                 <h3 className="h5 mb-2">{item.title}</h3>
                 <p className="text-base text-gray-600">{item.description}</p>
               </div>
             </div>
           ))}
         </div>
-
         <div className="text-center mt-10">
-          <Link href="/contact" className="btn btn-primary ml-0 px-6">
-            Talk to an Expert 
-            <span className="icon-wrapper">
-                          <span className="icon">
-                            <DynamicIcon icon={"FaArrowRight"} />
-                          </span>
-                          <span className="icon" aria-hidden="true">
-                            <DynamicIcon icon={"FaArrowRight"} />
-                          </span>
-                        </span>
+          <Link
+            href="/contact"
+            className="btn btn-primary ml-0 px-6"
+            aria-label="Talk to an Expert — opens contact page"
+          >
+            Talk to an Expert
+            <span className="icon-wrapper" aria-hidden="true">
+              <span className="icon">
+                <DynamicIcon icon={"FaArrowRight"} />
+              </span>
+              <span className="icon" aria-hidden="true">
+                <DynamicIcon icon={"FaArrowRight"} />
+              </span>
+            </span>
           </Link>
         </div>
       </div>

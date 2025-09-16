@@ -31,7 +31,7 @@ const Clients = () => {
                 >
                   <ImageFallback
                     src={logo}
-                    alt="brand logo"
+                    alt=""
                     height="120"
                     width="120"
                   />

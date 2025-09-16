@@ -44,7 +44,7 @@ const BlogCard = ({
           <ImageFallback
             className="w-5"
             src="/images/icons/png/date.png"
-            alt="date icon"
+            alt=""
             format="webp"
             width={20}
             height={20}
