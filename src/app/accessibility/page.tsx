@@ -1,6 +1,4 @@
 // app/accessibility/page.jsx
-import Link from "next/link";
-
 export const metadata = {
   title: "Accessibility & VPAT | AppFolio",
   description:
@@ -77,7 +75,6 @@ export default function AccessibilityPage() {
               >
                 Download Report
               </a>
-
             </div>
           </div>
         </div>
