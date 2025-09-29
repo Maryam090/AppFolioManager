@@ -33,6 +33,10 @@
     {
       "name": "Services",
       "url": "/services/"
+    },
+    {
+      "name": "Accessibility ",
+      "url": "/accessibility/"
     }
   ],
   "footer_quick_links": [

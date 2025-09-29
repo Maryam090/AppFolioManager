@@ -77,4 +77,4 @@ We may update these Terms & Conditions from time to time. Continued use of the s
 
 #### 10. Contact
 
-For questions about these Terms & Conditions, please contact us at **support@appstack.com**.
+For questions about these Terms & Conditions, please contact us at **support@app-stack.net**.
