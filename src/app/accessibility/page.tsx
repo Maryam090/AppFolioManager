@@ -17,9 +17,9 @@ export default function AccessibilityClient() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
       {/* Header */}
-      <header className="mb-8">
+      <header className="mb-5">
         <h1 style={{ fontSize: "24px", fontWeight: 500 }}>
-          Accessibility & VPAT
+          Accessibility Statement
         </h1>
         <p style={{ marginTop: "8px", color: "#555" }}>
           We are committed to making our website usable by everyone. We assess
@@ -64,7 +64,7 @@ export default function AccessibilityClient() {
           </p>
 
           <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
-            Known Accessibility Limitations (from our VPAT)
+            Known Accessibility Limitations
           </h2>
           <ul style={{ marginLeft: "20px", marginTop: "8px" }}>
             <li>
