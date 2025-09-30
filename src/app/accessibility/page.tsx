@@ -1,10 +1,4 @@
-// app/accessibility/page.jsx
-export const metadata = {
-  title: "Accessibility & VPAT | AppFolio",
-  description:
-    "We support accessibility and publish our VPAT® report. View or download the latest VPAT for AppFolio.",
-  robots: { index: true, follow: true },
-};
+"use client";
 
 const REPORTS = [
   {
@@ -12,115 +6,138 @@ const REPORTS = [
     title: "VPAT® 2.5 (WCAG 2.2 A/AA)",
     version: "2.5",
     date: "August 15, 2025",
-    url: "/reports/appfolio-vpat-2.5.pdf",
+    url: "/reports/App-Stack-Section508-VPAT-2.5.pdf",
     size: "~1.2 MB",
   },
-  // add older reports here if you keep a history
 ];
 
-export default function AccessibilityPage() {
+export default function AccessibilityClient() {
   const latest = REPORTS[0];
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
+      {/* Header */}
       <header className="mb-8">
-        <h1 className="text-3xl font-medium">Accessibility & VPAT</h1>
-        <p className="mt-2 text-gray-600">
+        <h1 style={{ fontSize: "24px", fontWeight: 500 }}>
+          Accessibility & VPAT
+        </h1>
+        <p style={{ marginTop: "8px", color: "#555" }}>
           We are committed to making our website usable by everyone. We assess
           against WCAG 2.2 Level AA and publish a VPAT® to document the current
           status and roadmap.
         </p>
       </header>
 
-      {/* Highlights */}
-      <section aria-labelledby="commitments" className="mb-10">
-        <h2 id="commitments" className="text-xl font-medium">Our commitments</h2>
-        <ul className="mt-3 list-disc space-y-1 pl-6">
-          <li>Design and code with accessibility in mind (WCAG 2.2 AA).</li>
-          <li>Test with keyboard and screen readers (e.g., NVDA).</li>
-          <li>Continuously improve known issues noted in the VPAT.</li>
-        </ul>
-      </section>
+      {/* Full Accessibility Statement Content */}
+      <div style={{ marginBottom: "20px" }}>
+        <div style={{ marginTop: "16px" }}>
+          <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Scope</h2>
+          <p>
+            This statement applies to app-stack.net and connected web
+            experiences.
+          </p>
 
-      {/* Latest VPAT card */}
-      <section aria-labelledby="latest-vpat" className="mb-10">
-        <h2 id="latest-vpat" className="text-xl font-medium">Latest VPAT</h2>
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
+            Our Standard & Current Status
+          </h2>
+          <p>
+            We are committed to making our website usable by everyone. We work
+            toward <b>WCAG 2.2 Level AA</b>. Our most recent assessment (VPAT®
+            2.5, August 15, 2025) evaluated the site against{" "}
+            <b>WCAG 2.0 A/AA</b> and found <b>overall “Partially Supports.”</b>
+          </p>
 
-        <div className="mt-4 rounded-2xl border p-5">
-          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="font-medium">{latest.title}</p>
-              <p className="text-sm text-gray-600">
-                Published: {latest.date} · File: PDF {latest.size}
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              {/* OPEN IN NEW TAB (view online) */}
-              <a
-                href={latest.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl border px-4 py-2 text-sm hover:bg-gray-50"
-                aria-label="Open VPAT Report"
-              >
-                View Report
-              </a>
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>How We Test</h2>
+          <p>
+            We combine automated checks and manual audits, including
+            screen-reader and keyboard testing. Tools and AT used include{" "}
+            <b>axe, Colour Contrast Analyser</b>, and{" "}
+            <b>NVDA, JAWS, VoiceOver</b> on current Chrome/Firefox/Edge/Safari
+            across Windows and macOS.
+          </p>
 
-              {/* DIRECT DOWNLOAD */}
-              <a
-                href={latest.url}
-                download
-                className="rounded-xl bg-black px-4 py-2 text-sm text-white hover:opacity-90"
-                aria-label="Download VPAT Report"
-              >
-                Download Report
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>Compatibility</h2>
+          <p>
+            Our site is intended to work with current versions of major browsers
+            on desktop and mobile OSs and with assistive technologies that
+            follow platform accessibility APIs.
+          </p>
 
-      {/* Report history */}
-      {REPORTS.length > 1 && (
-        <section aria-labelledby="past-reports" className="mb-10">
-          <h2 id="past-reports" className="text-xl font-semibold">Past reports</h2>
-          <ul className="mt-3 space-y-2">
-            {REPORTS.slice(1).map((r) => (
-              <li key={r.id} className="flex items-center justify-between rounded-xl border p-4">
-                <div>
-                  <p className="font-medium">{r.title}</p>
-                  <p className="text-sm text-gray-600">Published: {r.date} · PDF {r.size}</p>
-                </div>
-                <div className="flex gap-3">
-                  <a
-                    href={r.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm underline"
-                  >
-                    View
-                  </a>
-                  <a href={r.url} download className="text-sm underline">
-                    Download
-                  </a>
-                </div>
-              </li>
-            ))}
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
+            Known Accessibility Limitations (from our VPAT)
+          </h2>
+          <ul style={{ marginLeft: "20px", marginTop: "8px" }}>
+            <li>
+              <b>Non-text content:</b> some decorative images/icons are not
+              hidden from screen readers.
+            </li>
+            <li>
+              <b>Info & relationships / landmarks:</b> missing or incorrect
+              heading levels and landmarks on certain pages (e.g., missing H1 on
+              “About,” footer landmark not defined on “Login,” dashboard
+              landmarks).
+            </li>
+            <li>
+              <b>Bypass blocks:</b> “Skip to main content” link not present.
+            </li>
+            <li>
+              <b>Page titles:</b> some pages lack descriptive/unique titles.
+            </li>
+            <li>
+              <b>Focus order & forms:</b> focus can enter an unexpanded
+              accordion; focus doesn’t move to first invalid field; required
+              fields aren’t always announced.
+            </li>
+            <li>
+              <b>Name/Role/Value:</b> accordion name/state not exposed;
+              show/hide password control lacks accessible name.
+            </li>
+            <li>
+              <b>Contrast:</b> certain texts (e.g., “Login,” placeholders,
+              specific headings) fall below <b>4.5:1</b>.
+            </li>
           </ul>
-        </section>
-      )}
 
-      {/* Contact for accessibility issues */}
-      <section aria-labelledby="contact" className="mb-10">
-        <h2 id="contact" className="text-xl font-medium">Report an accessibility issue</h2>
-        <p className="mt-2 text-gray-600">
-          Found a problem or need an alternative format? Email{" "}
-          <a className="underline" href="mailto:accessibility@app-stack.net">
-            accessibility@app-stack.net
-          </a>{" "}
-          with a short description and page URL.
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
+            Feedback & Accommodation Requests
+          </h2>
+          <p>
+            If you encounter an accessibility barrier or need content in an
+            alternative format, email{" "}
+            <a
+              href="mailto:support@app-stack.net"
+              style={{ textDecoration: "underline" }}
+            >
+              <b>support@app-stack.net</b>
+            </a>
+            . We aim to reply within <b>2 business days</b> and resolve issues
+            within <b>10 business days</b>.
+          </p>
+
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>Documentation</h2>
+          <p>
+            Accessibility Conformance Report (VPAT® 2.5):{" "}
+          </p>
+
+          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
+            Ongoing Improvements
+          </h2>
+          <p>
+            We’re adding a global skip link, correcting heading hierarchy and
+            landmarks, fixing low-contrast styles, ensuring required fields are
+            programmatically conveyed, and labelling interactive controls. We
+            review this page after major releases and at least <b>annually</b>.
+          </p>
+        </div>
+      </div>
+
+      {/* Latest VPAT */}
+
+      <div>
+        <p style={{ fontSize: "14px", color: "#666" }}>
+          Published: {latest.date} · File: PDF {latest.size}
         </p>
-      </section>
+      </div>
     </main>
   );
 }
