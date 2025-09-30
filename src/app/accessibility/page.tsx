@@ -114,11 +114,6 @@ export default function AccessibilityClient() {
             within <b>10 business days</b>.
           </p>
 
-          <h2 style={{ fontSize: "20px", marginTop: "16px" }}>Documentation</h2>
-          <p>
-            Accessibility Conformance Report (VPAT® 2.5):{" "}
-          </p>
-
           <h2 style={{ fontSize: "20px", marginTop: "16px" }}>
             Ongoing Improvements
           </h2>
@@ -135,7 +130,7 @@ export default function AccessibilityClient() {
 
       <div>
         <p style={{ fontSize: "14px", color: "#666" }}>
-          Published: {latest.date} · File: PDF {latest.size}
+          Published: {latest.date}
         </p>
       </div>
     </main>
